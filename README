@@ -1,0 +1,22 @@
+1. Vector de frecventa
+    In cadrul functiei se citesc numere de la tastatura
+acestea se indexeaza in cadrul vectorului de frecventa.
+Apoi se afiseaza vectorul de frecventa.
+
+2. Hashtable cu open addressing
+    In aceasta sursa am format un hastable bazat pe linear 
+probing in care cheia reprezinta un sir de caractere.
+Am citit siruri de caractere de la tastatura si le-am pus
+corespunzator in hashtable. Apoi am afisat elementele din
+hashtable pe ecran.
+
+3. HyperLogLog
+    In aceasta sursa am citit numere de la tastatura. Am 
+folosit o functie de hash pe ele, iar cu valoarea obtinuta
+am luat primii 11 biti si i-am folosit pentru a determina 
+bucket-ul in care se afla numarul. Din cei 21 de biti ramasi
+am aflat numarul de 0-uri de la inceputul numarului si l-am
+adaugat in bucket in cazul in care numarul era mai mare decat
+cel deja existent.
+    Dupa formarea vectorului am calculat alfa pentru 11 biti si
+mai apoi am calculat E ce reprezinta numarul de valori distincte.
